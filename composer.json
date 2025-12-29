@@ -1,0 +1,37 @@
+{
+  "name": "elyerr/shop",
+  "version": "1.0.0",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Shop\\App\\": "app/",
+      "Shop\\Database\\Factories\\": "database/factories/",
+      "Shop\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Shop\\App\\Providers\\ServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "elyerr/laravel-runtime": "^1.0",
+    "inertiajs/inertia-laravel": "^2.0",
+    "laravel/framework": "^12.42",
+    "elyerr/api-response": "^1.0"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "php artisan assets:publish"
+    ]
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}

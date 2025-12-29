@@ -1,0 +1,12 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "@mdi/font/css/materialdesignicons.css";
+@import "notyf/notyf.min.css";
+@import "tailwindcss" source(none);
+
+  
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
