@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 const path = require('path');
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 mix.webpackConfig({
     resolve: {
@@ -11,13 +12,22 @@ mix.webpackConfig({
     stats: {
         children: false,
     },
-    plugins: [],
+    plugins: [
+        new MonacoWebpackPlugin({
+            languages: ['json', 'css', 'html', 'typescript'],
+        }),
+    ],
 })
 
 mix.js('resources/js/app.js', 'js/app.js')
-    .vue({ version: 3 })
+    .js('resources/js/ecommerce.js', 'js/ecommerce.js')
     .version()
+    .vue({ version: 3 })
     .postCss('resources/css/app.css', 'css/app.css', [
+        require('@tailwindcss/postcss'),
+        require("autoprefixer"),
+    ])
+    .postCss('resources/css/ecommerce.css', 'css/ecommerce.css', [
         require('@tailwindcss/postcss'),
         require("autoprefixer"),
     ]);

@@ -33,6 +33,10 @@
     "notyf": "^3.10.0",
     "stream-browserify": "^3.0.0",
     "vue": "^3.2.41",
-    "vue-i18n": "^11.1.11"
+    "vue-i18n": "^11.1.11",
+    "vue-sweetalert2": "^5.0.11",
+    "jodit": "^4.6.13",
+    "monaco-editor": "^0.53.0",
+    "monaco-editor-webpack-plugin": "^7.1.1"
   }
 }

@@ -1,0 +1,25 @@
+/** custom css styles */
+@import 'tailwindcss' source(none);
+@import "flatpickr";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "sweetalert2/dist/sweetalert2.min.css";
+@import "@mdi/font/css/materialdesignicons.css";
+@import '@vuepic/vue-datepicker/dist/main.css';
+@import "notyf/notyf.min.css";
+@import "jodit/es2021/jodit.min.css";
+
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary-50: #faf5ff;
+    --color-primary-100: #f3e8ff;
+    --color-primary-500: #a855f7;
+    --color-primary-600: #9333ea;
+    --color-primary-700: #7c3aed;
+    --color-primary-800: #6b21a8;
+    --color-primary-900: #581c87;
+}

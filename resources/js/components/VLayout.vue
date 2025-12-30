@@ -141,9 +141,9 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { router, usePage } from "@inertiajs/vue3";
-import VNotification from "@test/components/VNotification.vue";
-import VProfile from "@test/components/VProfile.vue";
-import VTheme from "@test/components/VTheme.vue";
+import VNotification from "@shop/components/VNotification.vue";
+import VProfile from "@shop/components/VProfile.vue";
+import VTheme from "@shop/components/VTheme.vue";
 
 const page = usePage();
 

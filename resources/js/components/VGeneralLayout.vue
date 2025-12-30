@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-import VLayout from "@test/components/VLayout.vue";
+import VLayout from "@shop/components/VLayout.vue";
 import { router, usePage } from "@inertiajs/vue3";
 import { ref, onMounted } from "vue";
 

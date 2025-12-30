@@ -319,7 +319,7 @@
 </template>
 
 <script setup>
-import VError from "@test/components/VError.vue";
+import VError from "@shop/components/VError.vue";
 import { ref, computed, onMounted, watch } from "vue";
 
 const emit = defineEmits(["update:modelValue"]);
