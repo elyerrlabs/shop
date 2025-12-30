@@ -28,5 +28,5 @@ return [
 
   // Example morph models
   // (new \App\Models\Elymod())->tag => \App\Models\Elymod::class,
-
+  (new \Shop\App\Models\Product())->tag => \Shop\App\Models\Product::class,
 ];
