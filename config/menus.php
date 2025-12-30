@@ -27,6 +27,31 @@ return [
     |
     */
 
+
+    "shop_orders" => [
+        "id" => "orders",
+        "name" => "My cart",
+        "route" => "module.shop.web.orders.index",
+        "icon" => "mdi-store-cog",
+        'service' => true
+    ],
+
+    "shop_dashboard" => [
+        "id" => "search",
+        "name" => "Search",
+        "route" => "module.shop.web.search",
+        "icon" => "mdi-shopping-search-outline",
+        'service' => true
+    ],
+
+    "shop_checkout" => [
+        "id" => "orders",
+        "name" => "My checkouts",
+        "route" => "module.shop.web.checkouts.index",
+        "icon" => "mdi-shopping-search-outline",
+        'service' => true
+    ],
+
     'merge' => [
 
         /*
@@ -40,15 +65,13 @@ return [
         */
         'admin_dashboard' => [
 
-            /*
-            'elymod-admin' => [
-                'id'      => 'elymod-admin',
-                'name'    => 'ElyMod Admin',
-                'route'   => 'module.elymod.web.welcome',
-                'icon'    => 'mdi-security',
-                'service' => 'administrator:admin',
+            "shop" => [
+                "id" => "shop",
+                "name" => "Shop",
+                "route" => "module.shop.admin.dashboard",
+                "icon" => "mdi-store-cog",
+                'service' => "administrator:ecommerce"
             ],
-            */
 
         ],
 
@@ -62,15 +85,30 @@ return [
         */
         'user_routes' => [
 
-            /*
-            'elymod-app' => [
-                'id'      => 'elymod-app',
-                'name'    => 'ElyMod',
-                'route'   => 'module.elymod.web.welcome',
-                'icon'    => 'mdi-application',
-                'service' => 'user:access',
+
+            "shop" => [
+                "id" => "shop",
+                "name" => "My Store",
+                "route" => "module.shop.web.dashboard",
+                "icon" => "mdi-store-cog",
+                'service' => true
             ],
-            */
+
+            "shop_orders" => [
+                "id" => "orders",
+                "name" => "My cart",
+                "route" => "module.shop.web.orders.index",
+                "icon" => "mdi-store-cog",
+                'service' => true
+            ],
+
+            "shop_checkout" => [
+                "id" => "orders",
+                "name" => "My orders",
+                "route" => "module.shop.web.checkouts.index",
+                "icon" => "mdi-store-cog",
+                'service' => true
+            ],
 
         ],
 
@@ -146,5 +184,51 @@ return [
         ],
         */
     ],
+
+    "shop_menus" => [
+        [
+            "id" => 'dashboard',
+            "name" => "Dashboard",
+            "route" => "module.shop.admin.dashboard",
+            "icon" => "mdi-view-dashboard",
+            'service' => "administrator:ecommerce"
+        ],
+        [
+            "id" => "categories",
+            "name" => "Categories",
+            "route" => "module.shop.admin.categories.index",
+            "icon" => "mdi-circle-outline",
+            'service' => "administrator:ecommerce"
+        ],
+        [
+            "id" => "products",
+            "name" => "Products",
+            "route" => "module.shop.admin.products.index",
+            "icon" => "mdi-circle-outline",
+            'service' => "administrator:ecommerce"
+        ],
+        [
+            "id" => "orders",
+            "name" => "Orders",
+            "route" => "module.shop.admin.orders.complete",
+            "icon" => "mdi-format-list-checks",
+            'service' => "administrator:ecommerce"
+        ],
+        [
+            "id" => "orders_pending",
+            "name" => "Pending",
+            "route" => "module.shop.admin.orders.pending",
+            "icon" => "mdi-clock-outline",
+            'service' => "administrator:ecommerce"
+        ],
+        [
+            "id" => "orders_customers",
+            "name" => "Customers",
+            "route" => "module.shop.admin.orders.customers",
+            "icon" => "mdi-account-group",
+            'service' => "administrator:ecommerce"
+        ],
+    ],
+
 
 ];
