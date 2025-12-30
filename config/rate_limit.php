@@ -81,4 +81,16 @@ return [
     //     'name'       => 'Custom rate limit description',
     // ],
 
+    'api_web' => [
+        'limit' => 300,
+        'block_time' => 120,
+        'name' => 'Rate Limit for API Web routes'
+    ],
+
+    'api_admin' => [
+        'limit' => 300,
+        'block_time' => 120,
+        'name' => 'Rate Limit for API Admin routes'
+    ],
+
 ];
