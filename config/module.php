@@ -19,7 +19,7 @@ return [
     | Human-readable name used for display purposes.
     |
     */
-    'name' => 'Elymod Module',
+    'name' => 'Shop Module',
 
     /*
     |--------------------------------------------------------------------------
