@@ -1,9 +1,7 @@
 <?php
 
 namespace Shop\App\Models;
-
-use App\Models\Master;
-
+ 
 class Serie extends Master
 {
     /**

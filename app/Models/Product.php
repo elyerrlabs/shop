@@ -1,8 +1,8 @@
 <?php
 
 namespace Shop\App\Models;
-
-use App\Models\Master;
+ 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 
 class Product extends Master
