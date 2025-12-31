@@ -55,13 +55,13 @@ class StoreRequest extends FormRequest
             ],
 
             'description' => ['required', 'max:1500', new UndefinedValues()],
-            'icon' => [
+            /*'icon' => [
                 Rule::requiredIf(function () {
                     return !$this->filled('id');
                 }),
                 'max:100',
                 new UndefinedValues()
-            ],
+            ],*/
             'featured' => ['nullable', new BooleanRule()],
             'published' => ['nullable', new BooleanRule()],
             'images' => [

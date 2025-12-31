@@ -76,7 +76,7 @@ SPDX-License-Identifier: LicenseRef-NC-Open-Source-Project
                                     />
                                 </div>
 
-                                <!-- Icon Field -->
+                                <!-- Icon Field 
                                 <div class="space-y-2">
                                     <v-input
                                         :label="__('Icon')"
@@ -96,7 +96,7 @@ SPDX-License-Identifier: LicenseRef-NC-Open-Source-Project
                                             View Icon Library
                                         </i>
                                     </a>
-                                </div>
+                                </div>-->
 
                                 <!-- Status Toggles -->
                                 <div class="space-y-4">
